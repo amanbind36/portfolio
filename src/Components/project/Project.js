@@ -119,7 +119,7 @@ export default function Appa() {
       
       <div className={Styles.text}>
       <h2>Serious Dating</h2>
-      <p>Clone of Dating Website:Using HTML, CSS, JAVASCRIPT, DOM and Local Storage. This is an E-Commerce website where you can buy clothes.</p>
+      <p>Clone of Dating Website:Using HTML, CSS, React and  . This is an Dating website where you can match your life partener.</p>
       <h3>Link is here:</h3>
       <a href="heroic-genie-d2db53.netlify.app"> <button className={Styles.button}>Show</button></a>
      
@@ -135,7 +135,7 @@ export default function Appa() {
     <div>
     <div className={Styles.text}>
       <h2>Flipkart</h2>
-      <p>Clone of Flipkart Website:Using HTML, CSS, JAVASCRIPT, DOM and Local Storage. This is an E-Commerce website where you can buy clothes.</p>
+      <p>Clone of Flipkart Website:Using HTML, CSS, JAVASCRIPT, DOM and Local Storage. This is an E-Commerce website where you can buy Electronics device.</p>
       <h3>Link is here:</h3>
       <a href="https://strong-baklava-c82690.netlify.app/"> <button className={Styles.button}>Show</button></a>
      
@@ -160,7 +160,7 @@ export default function Appa() {
       
       <div className={Styles.text}>
       <h2>Cocxmining</h2>
-      <p>Clone of Ultramining Website:Using HTML, CSS, JAVASCRIPT, DOM and Local Storage. This is an E-Commerce website where you can buy clothes.</p>
+      <p>Clone of Ultramining Website:Using HTML, CSS, React   . This is an Mining website where you can search about Mining</p>
       <h3>Link is here:</h3>
       <a href="tranquil-brioche-a33c6e.netlify.app"> <button className={Styles.button}>Show</button></a>
      
