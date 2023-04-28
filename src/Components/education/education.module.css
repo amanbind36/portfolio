@@ -1,0 +1,42 @@
+.container{
+
+width: 90%;
+height: 600px;
+margin: auto;
+margin-top: 50px;
+}
+
+.education{
+   
+    width: 90%;
+    height: 550px;
+    background-color: white;
+    display: flex;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.education>div{
+ 
+    width: 50%;
+    height: 100%;
+    font-family: georgia;
+}
+.lin{
+    height: 5px;
+    width: 100px;
+    background-color: #5643CC;
+    margin: auto;
+  }
+.line{
+    
+    width: 300px;
+    height: 4px;
+    margin: auto;
+    background: linear-gradient(90deg, rgb(39, 216, 193) 20%, rgb(140, 184, 7) 35%, rgb(8, 76, 194) 70%, rgb(7, 236, 49) 100%);
+}
+.educ{
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
