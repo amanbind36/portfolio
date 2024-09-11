@@ -4,7 +4,19 @@ width: 90%;
 height: 600px;
 margin: auto;
 margin-top: 50px;
+animation: ker;
+    animation-timeline: scroll();
 }
+@keyframes ker {
+    0% {
+        opacity: 0.5;
+      transform: scale(0.2);
+    }
+    30% {
+        opacity: 1;
+      transform: scale(1);
+    }
+  }
 
 .education{
    

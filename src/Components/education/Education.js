@@ -26,19 +26,19 @@ const Education = () => {
       <div className={Styles.educ}>
         <div>
           <h2>Masai School</h2>
-          <p>React.js (Frontend-Deveplover )</p>
+          <p>React.js HTML, CSS and JAVASCRIPT (Frontend-Development )</p>
         </div>
         <div>
-          Nov 2022- Dec 2022
+          June 2024- Augest 2024
         </div>
       </div>
       <div className={Styles.educ}>
         <div>
         <h2>Masai School</h2>
-          <p>HTML, CSS and JAVASCRIPT</p>
+          <p>Python, SQL, MongoDB </p>
         </div>
         <div>
-          Aug 2022-Oct 2022
+          Feb 2024-May 2024
         </div>
       </div>
     </div>

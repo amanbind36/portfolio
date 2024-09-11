@@ -18,7 +18,7 @@ const About = () => {
     
       <div className={Styles.left}>
       
-      <div className='homeCube'>
+      <div className={Styles.cube}>
                   <Swiper
                     effect={"cube"}
                     grabCursor={true}
@@ -28,23 +28,24 @@ const About = () => {
                       slideShadows: true,
                       shadowOffset: 20,
                       shadowScale: 0.94,
+                      
                     }}
                     autoplay={{
-                      delay: 1500,
-                      disableOnInteraction: false,
+                      delay: 2500,
+                      disableOnInteraction: true,
                     }}
                     pagination={true}
                     modules={[EffectCube,Autoplay]}
                     className="mySwiper"
                   >
-                    <SwiperSlide>
-                      <img src={pic2} />
+                    <SwiperSlide style={{height:"600px"}}>
+                      <img height="1000px" src={pic2} />
                     </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={pic1} />
+                    <SwiperSlide style={{height:"600px"}}>
+                      <img height="1000px" src={pic1} />
                     </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={pic3} />
+                    <SwiperSlide style={{height:"600px"}}>
+                      <img height="1000px" src={pic3} />
                     </SwiperSlide>
                     {/* <SwiperSlide>
                       <img src={pic4} />

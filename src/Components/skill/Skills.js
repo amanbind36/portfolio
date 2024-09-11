@@ -5,6 +5,7 @@ import { ImHtmlFive } from 'react-icons/im';
 import { IoLogoCss3 } from 'react-icons/io';
 import { TbBrandJavascript } from 'react-icons/tb';
 import { FaReact } from 'react-icons/fa';
+import { FaPython } from 'react-icons/fa';
 import pic4 from "../About/pic/a4.png"
 const Skills = () => {
   return (
@@ -48,6 +49,15 @@ const Skills = () => {
   <div  className={Styles.react}>
   <FaReact className={Styles.icon}/>
   <h1>REACT</h1>
+  </div>
+
+  <LinearProgress variant="determinate" value={85} />
+  <br/>
+  <br/>
+  <div  className={Styles.react}>
+  
+  <FaPython className={Styles.icon}/>
+  <h1>Python</h1>
   </div>
 
   <LinearProgress variant="determinate" value={85} />

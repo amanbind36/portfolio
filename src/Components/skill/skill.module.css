@@ -1,22 +1,31 @@
 .container{
    background-image: url("../About/pic/a4.png");
     width: 80%;
-    /* backgroundPosition: 'center';
-    backgroundSize: 'cover';
-    backgroundRepeat: 'no-repeat',
-    width: '100vw',
-    height: '100vh' */
+   
     background-position: center;
     background-size: cover;
   
-    height: 700px;
+    height: 100vh;
     color: white;
     margin: auto;
     font-family: georgia;
     padding: 10px;
     margin-top: 50px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    animation: ker;
+    animation-timeline: scroll();
 }
+@keyframes ker {
+    0% {
+        opacity: 0.5;
+      transform: scale(0.001);
+    }
+    40% {
+        opacity: 1;
+      transform: scale(1);
+    }
+  }
+
 .line{
     height: 5px;
     width: 100px;
