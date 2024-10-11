@@ -14,6 +14,7 @@ import flip from "../image/flip.png"
 import cocx from "../image/cocx.png"
 import date from "../image/date.png"
 import tata from "../image/tata.png"
+import resumeBuilder from "../image/resumeBuilder.png"
 
 import "./styles.css";
 
@@ -25,6 +26,25 @@ export default function Appa() {
     <>
     <div><h1>My Projects</h1></div>
     <div className={Styles.line}></div>
+    <br/>
+    <br/>
+    <br/>
+    <div className={Styles.container}>
+    <div>
+    <div className={Styles.text}>
+      <h2>Resume Builder</h2>
+      <p>This is a Resume Builder Website: Using React and Firebase. Here user can Build there resume for Applying any kind of job.</p>
+      <h3>Link is here:</h3>
+      <a href="https://thunderous-blini-f41e4c.netlify.app/"> <button className={Styles.button}>Show</button></a>
+     
+      </div>
+    </div>
+    <div>
+    <img height="100%" width="100%" src={resumeBuilder} />
+     
+     
+    </div>
+    </div>
     <br/>
     <br/>
     <br/>
@@ -121,7 +141,7 @@ export default function Appa() {
       <h2>Serious Dating</h2>
       <p>Clone of Dating Website:Using HTML, CSS, React and  . This is an Dating website where you can match your life partener.</p>
       <h3>Link is here:</h3>
-      <a href="heroic-genie-d2db53.netlify.app"> <button className={Styles.button}>Show</button></a>
+      <a href="https://heroic-genie-d2db53.netlify.app/"> <button className={Styles.button}>Show</button></a>
      
       </div>
      
@@ -137,7 +157,7 @@ export default function Appa() {
       <h2>Flipkart</h2>
       <p>Clone of Flipkart Website:Using HTML, CSS, JAVASCRIPT, DOM and Local Storage. This is an E-Commerce website where you can buy Electronics device.</p>
       <h3>Link is here:</h3>
-      <a href="https://strong-baklava-c82690.netlify.app/"> <button className={Styles.button}>Show</button></a>
+      <a href="https://jazzy-nasturtium-2db388.netlify.app/"> <button className={Styles.button}>Show</button></a>
      
       </div>
      
