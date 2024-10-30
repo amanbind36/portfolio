@@ -6,11 +6,13 @@ import Contact from '../contact/Contact'
 import Education from '../education/Education'
 import Skills from '../skill/Skills'
 import Appa from '../project/Project'
+import Main from "../main/main"
 
 const AllRoutes = () => {
   return (
     <div>
     <Routes>
+    <Route path='/' element={<Main/>}></Route>
         <Route path='/appa' element={<Appa/>}></Route>
         <Route path='/skills' element={<Skills/>}></Route>
         <Route path='/education' element={<Education/>}></Route>

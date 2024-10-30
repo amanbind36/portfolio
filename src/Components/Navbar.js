@@ -24,27 +24,27 @@ const Navbar = () => {
           </div>
           <ul className={`${Styles.navLinks} ${isMobile ? Styles.mobileMenu : ''}`}>
             <li>
-              <Link to="home" spy={true} smooth={true} duration={500} onClick={handleMenuToggle}>
+              <Link to="/" spy={true} smooth={true} duration={500} >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="about" spy={true} smooth={true} duration={500} onClick={handleMenuToggle}>
+              <Link to="about" spy={true} smooth={true} duration={500} >
                 About
               </Link>
             </li>
             <li>
-              <Link to="skills" spy={true} smooth={true} duration={500} onClick={handleMenuToggle}>
+              <Link to="skills" spy={true} smooth={true} duration={500} >
                 Skills
               </Link>
             </li>
             <li>
-              <Link to="projects" spy={true} smooth={true} duration={500} onClick={handleMenuToggle}>
+              <Link to="projects" spy={true} smooth={true} duration={500} >
                 Projects
               </Link>
             </li>
             <li>
-              <Link to="contact" spy={true} smooth={true} duration={500} onClick={handleMenuToggle}>
+              <Link to="contact" spy={true} smooth={true} duration={500} >
                 Contact
               </Link>
             </li>

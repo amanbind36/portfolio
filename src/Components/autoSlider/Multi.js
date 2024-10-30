@@ -108,7 +108,7 @@ const Banner = () => {
        <button className="btn">   <a href={Aman_Resume} download="Aman_Resume.pdf"> Download Resume </a></button>
        </div>
       <div >
-      <img  className='displaynone' width={700} height={700}    src={spic1}/>
+      <img  className='displaynone' width={700} height={700}    src={spic2}/>
       </div>
        
       

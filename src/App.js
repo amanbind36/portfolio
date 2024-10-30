@@ -16,7 +16,10 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      <div id="/">
       <Main/>
+      </div>
+      
     <br/>
       <div id="about">
         <About />

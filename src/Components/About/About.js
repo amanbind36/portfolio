@@ -21,44 +21,7 @@ const About = () => {
     
     <div className={Styles.container}>
     
-      <div data-aos="fade-up" className={Styles.left}>
       
-      <div className={Styles.cube}>
-                  <Swiper
-                    effect={"cube"}
-                    grabCursor={true}
-                    loop={true}
-                    cubeEffect={{
-                      shadow: true,
-                      slideShadows: true,
-                      shadowOffset: 20,
-                      shadowScale: 0.94,
-                      
-                    }}
-                    autoplay={{
-                      delay: 2500,
-                      disableOnInteraction: true,
-                    }}
-                    pagination={true}
-                    modules={[EffectCube,Autoplay]}
-                    className="mySwiper"
-                  >
-                    <SwiperSlide style={{height:"600px"}}>
-                      <img height="1000px" src={pic2} />
-                    </SwiperSlide>
-                    <SwiperSlide style={{height:"600px"}}>
-                      <img height="1000px" src={pic1} />
-                    </SwiperSlide>
-                    <SwiperSlide style={{height:"600px"}}>
-                      <img height="1000px" src={pic3} />
-                    </SwiperSlide>
-                    {/* <SwiperSlide>
-                      <img src={pic4} />
-                    </SwiperSlide> */}
-                  </Swiper>
-                </div>
-        {/* <img width="100%" height="100%" src={spic3}/> */}
-      </div>
       <div data-aos="fade-up" className={Styles.right}>
         <div className={Styles.inside}>
        <h3>WELCOME</h3>
