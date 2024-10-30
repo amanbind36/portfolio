@@ -1,12 +1,14 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import amn from "../image/amn.jpg"
-import spic2 from "../image/am1.png"
-import spic1 from "../About/pic/a2.png"
+import amn from "../image/amn.png"
+import spic2 from "../image/amn.png"
+import spic1 from "../image/am1.png"
 import amanresume from "../image/amanresume.jpg"
 import Aman_Resume from "../Resume/Aman_Resume.pdf"
 import { motion } from 'framer-motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./auto.css"
 
 
@@ -35,7 +37,9 @@ const Banner = () => {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const words = ['A Developer', 'A Creator', 'A Designer'];
-
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   const handleTyping = () => {
     const current = loopNum % words.length;
     const fullText = words[current];
@@ -63,6 +67,22 @@ const Banner = () => {
 
   return (
     <>
+    <div data-aos="zoom-in" className='aftermobile'>
+    <div className='text'>
+       <h3 className='blue'>Hello</h3>
+       <h1>I am <span className='blue' >Aman Bind</span></h1>
+       <motion.h1
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                    id="texts"
+                  >
+                    <span className='HomeTextAnime'>{text}</span>
+                  </motion.h1>
+       <span><h3>React-Frontend-Developer</h3></span>
+       <button className="btn">   <a href={Aman_Resume} download="Aman_Resume.pdf"> Download Resume </a></button>
+       </div>
+    </div>
     <Carousel
     responsive={responsive}
     swipeable={false}
@@ -72,7 +92,7 @@ const Banner = () => {
     autoPlaySpeed={5000}
     removeArrowOnDeviceType={["tablet", "mobile","desktop"]}
     >
-       <div className='main'>
+       <div data-aos="zoom-in" className='main'>
        <div className='text'>
        <h3 className='blue'>Hello</h3>
        <h1>I am <span className='blue' >Aman Bind</span></h1>
@@ -87,21 +107,21 @@ const Banner = () => {
        <span><h3>React-Frontend-Developer</h3></span>
        <button className="btn">   <a href={Aman_Resume} download="Aman_Resume.pdf"> Download Resume </a></button>
        </div>
-      <div>
-      <img  width={700} height={700}   className='image' src={spic2}/>
+      <div >
+      <img  className='displaynone' width={700} height={700}    src={spic1}/>
       </div>
        
       
        </div>
      
-       <div>
+       <div data-aos="zoom-in" className='display2'>
        <div className='text'>
       
-       <h3>a <span className='blue' >web <br/> designer</span> from India</h3>
+       <h3>A <span className='blue' >web <br/> designer</span> from India</h3>
        <button className="btn">Hire Me</button>
        </div>
        <div>
-       <img width={700} height={700} src={spic1}/>
+       <img width={700} height={700} src={spic2}/>
        </div>
   
        </div>

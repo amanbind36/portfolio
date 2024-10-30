@@ -44,7 +44,7 @@ margin-top: 50px;
     margin-top: 20px;
 }
 .border{
-    border: 1px solid black;
+
     width: 70%;
     height: 70%;
     margin: auto;
@@ -94,8 +94,25 @@ font-size: 20px;
     transition-duration: .1s;
   }
   
-  @media (min-width: 768px) {
+  @media (width<=650px) {
     .button {
       padding: 0 2.6rem;
+    }
+    .main{
+        height: auto;
+    }
+    .container{
+        display: block;
+        height: auto;
+    }
+    .left,.right{
+        width: 90%;
+    }
+    .border{
+        width: 100%;
+        margin-left: 50px;
+    }
+    .button{
+        width: 100px;
     }
   }

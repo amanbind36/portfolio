@@ -3,9 +3,12 @@
     position: absolute;
   margin-left: 200px;
 }
-.image{
+/* .image{
   
    position: relative;
+} */
+.displaynone{
+  position: relative;
 }
 .blue{
   color: blue;
@@ -46,9 +49,35 @@
   box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
   transition-duration: .1s;
 }
+.aftermobile{
+  display: none;
+}
 
-@media (min-width: 768px) {
+@media (width<= 768px) {
   .btn {
     padding: 0 2.6rem;
+  }
+  .displaynone{
+    display: none;
+  }
+}
+@media (width<= 650px) {
+  .aftermobile{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    margin-left: -100px;
+    display: block;
+  }
+  .main,.display2{
+    display: none;
+  }
+}
+
+@media (width<= 450px) {
+  .aftermobile{
+    margin-left: -130px;
+    margin-top: 100px;
   }
 }

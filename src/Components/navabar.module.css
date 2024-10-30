@@ -1,44 +1,11 @@
-/* .container{
- 
-    width: 100%;
-    height: 100px;
-    display: flex;
-    position: relative;
-}
-.left{
 
-    width: 40%;
-    height: 100%;
-}
-.right{
-
-    width: 60%;
-    height: 100%;
-   
-}
-.right>ul{
-    justify-content: space-around;
-    list-style: none;
-}
-.square{
-   
-    height: 800px;
-    width: 600px;
-    margin-left: 60.5%;
-   
-    margin-top: -1010px;
-    background-color: rgb(119,183,255);
-}
-.banner{
-    z-index: 1;
-} */
 
 /* Navbar Container */
 .container {
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 5%;
     background-color: #282c34;
@@ -48,7 +15,14 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
-
+.left{
+    
+    width: 30%;
+}
+.right{
+  
+width: 50%;
+}
 /* Left Section: Logo or Title */
 .left h1 {
     color: #fff;
@@ -103,15 +77,6 @@
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Banner Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 .banner {
     position: relative;
@@ -132,11 +97,56 @@
 }
 
 /* Floating Animation */
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0) rotate(15deg);
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bar, .barOpen {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+/* Mobile Menu Styling */
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #282c34;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.navLinks {
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .right ul {
+        display: none;
     }
-    50% {
-        transform: translateY(-20px) rotate(15deg);
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navLinks.mobileMenu {
+        display: flex;
+    }
+    .right{
+        
+    width: 20%;
     }
 }
+

@@ -1,7 +1,8 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // Import Swiper styles
 import Styles from "./project.module.css"
 import "swiper/css";
@@ -9,6 +10,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import myntra from "../image/myntra.png"
 import boat from "../image/boat.png"
+import ai from "../image/ai.png"
 import reverb from "../image/reverb.png"
 import flip from "../image/flip.png"
 import cocx from "../image/cocx.png"
@@ -22,14 +24,37 @@ import "./styles.css";
 import { EffectCoverflow, Pagination } from "swiper";
 
 export default function Appa() {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <>
-    <div><h1>My Projects</h1></div>
+    <div data-aos="fade-up"><h1>My Projects</h1></div>
     <div className={Styles.line}></div>
     <br/>
     <br/>
     <br/>
-    <div className={Styles.container}>
+    <div data-aos="fade-up" className={Styles.container}>
+    <div>
+      <img height="100%" width="100%" src={ai} />
+    </div>
+    <div>
+      
+      <div className={Styles.text}>
+      <h2>EathAi</h2>
+      <p>A Next.js project using Tailwind CSS and TypeScript, replicating a Figma design with smooth animations. Focused on responsive UI, React hooks, performance optimization, and clean, maintainable code.</p>
+      <h3>Link is here:</h3>
+      <a href="https://aman-bind-frontend-developer-3hp4.vercel.app/"> <button className={Styles.button}>Show</button></a>
+     
+      </div>
+     
+    </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div data-aos="fade-up" className={Styles.container}>
     <div>
     <div className={Styles.text}>
       <h2>Resume Builder</h2>
@@ -48,7 +73,7 @@ export default function Appa() {
     <br/>
     <br/>
     <br/>
-    <div className={Styles.container}>
+    <div data-aos="fade-up" className={Styles.container}>
     <div>
       <img height="100%" width="100%" src={myntra} />
     </div>
@@ -69,7 +94,7 @@ export default function Appa() {
     <br/>
     <br/>
 
-    <div className={Styles.container}>
+    <div data-aos="fade-up" className={Styles.container}>
     <div>
     <div className={Styles.text}>
       <h2>Boat</h2>
@@ -89,7 +114,7 @@ export default function Appa() {
     <br/>
     <br/>
     <br/>
-    <div className={Styles.container}>
+    <div data-aos="fade-up" className={Styles.container}>
     <div>
       <img height="100%" width="100%" src={reverb} />
     </div>
@@ -109,7 +134,7 @@ export default function Appa() {
     <br/>
     <br/>
     <br/>
-    <div className={Styles.container}>
+    <div data-aos="fade-up" className={Styles.container}>
     <div>
     <div className={Styles.text}>
       <h2>Tata-Cliq</h2>
@@ -131,7 +156,7 @@ export default function Appa() {
     <br/>
     <br/>
     <br/>
-    <div className={Styles.container}>
+    <div data-aos="fade-up" className={Styles.container}>
     <div>
       <img height="100%" width="100%" src={date} />
     </div>
@@ -151,7 +176,7 @@ export default function Appa() {
     <br/>
     <br/>
     <br/>
-    <div className={Styles.container}>
+    <div data-aos="fade-up" className={Styles.container}>
     <div>
     <div className={Styles.text}>
       <h2>Flipkart</h2>
@@ -172,7 +197,7 @@ export default function Appa() {
     <br/>
     <br/>
     <br/>
-    <div className={Styles.container}>
+    <div data-aos="fade-up" className={Styles.container}>
     <div>
       <img height="100%" width="100%" src={cocx} />
     </div>

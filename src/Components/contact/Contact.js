@@ -1,4 +1,6 @@
-import React from 'react'
+import React,{ useEffect }  from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Styles from "./contact.module.css"
 import { IoIosCall} from 'react-icons/io';
 import { MdOutlineMailOutline} from 'react-icons/md';
@@ -8,6 +10,9 @@ import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
     const form = useRef();
 
       const sendEmail = (e) => {
@@ -21,11 +26,11 @@ const Contact = () => {
           });
       };
   return (<>
-    <div><h1>Contact Me</h1></div>
+    <div data-aos="fade-up"><h1>Contact Me</h1></div>
     <div className={Styles.line}></div>
     <div className={Styles.main}> 
       <div className={Styles.container}>
-   <div className={Styles.left }>
+   <div data-aos="fade-up" className={Styles.left }>
       <div>
         <h1>Get in touch</h1>
         <h3>Let's talk about your Project</h3>
@@ -56,7 +61,7 @@ const Contact = () => {
         </div>
       </div>
    </div>
-   <div className={Styles.right}>
+   <div data-aos="fade-up" className={Styles.right}>
     <div className={Styles.details}>
     <div className={Styles.border}>
       <div className={Styles.info}><h1>Your Contact Information</h1></div>

@@ -1,16 +1,20 @@
-import React from 'react'
+import React,{ useEffect }  from 'react'
 import Styles from "./education.module.css"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Education = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <>
-    <div><h1>Education Details</h1></div>
+    <div data-aos="fade-up"><h1>Education Details</h1></div>
     <div className={Styles.lin}></div>
     <div className={Styles.container}>
     
    
    
-   <div className={Styles.education}>
+   <div data-aos="fade-up" className={Styles.education}>
     <div className={Styles.skill}>
       <h1>Skill Education</h1>
       <div className={Styles.line}></div>

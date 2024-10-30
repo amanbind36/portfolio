@@ -1,6 +1,7 @@
 /* Banner Section */
 .ban {
     position: relative;
+    width: 100%;
     margin-top: 100px;
     background-image: linear-gradient(to right, #77b7ff, #4a90e2);
     justify-content: center;
@@ -103,3 +104,26 @@
         transform: translateY(-20px) rotate(15deg);
     }
 }
+
+@media (width<= 768px) {
+    .ban{
+        width: 100%;
+        margin: auto;
+       
+    }
+   
+    .square {
+        top: 100px;
+        right: 8%;
+    }
+  }
+  @media (width<= 450px) {
+   
+    .square {
+       display: none;
+    }
+    .square1{
+        height: 200px;
+        display: none;
+    }
+  }

@@ -50,8 +50,14 @@
     transition-duration: .1s;
   }
   
-  @media (min-width: 768px) {
+  @media (width<= 768px) {
     .button {
       padding: 0 2.6rem;
+      display: none;
+    }
+  }
+  @media (width<= 400px) {
+    .container{
+      display: none;
     }
   }

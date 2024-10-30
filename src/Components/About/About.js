@@ -1,22 +1,27 @@
-import React from 'react'
+import React,{ useEffect }  from 'react'
 import Styles from "./about.module.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation ,FreeMode} from "swiper";
 import pic1 from "./pic/a1.png"
-import pic2 from "./pic/a2.png"
+import pic2 from "../image/amn.png"
 import pic3 from "./pic/a3.png"
 import pic4 from "./pic/a4.png"
 import { EffectCube } from "swiper";
 import spic3 from "../image/spic3.jpeg"
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <>
-    <div className={Styles.head}><h1>About Me</h1></div>
+    <div data-aos="fade-up" className={Styles.head}><h1>About Me</h1></div>
     <div className={Styles.line}></div>
     
     <div className={Styles.container}>
     
-      <div className={Styles.left}>
+      <div data-aos="fade-up" className={Styles.left}>
       
       <div className={Styles.cube}>
                   <Swiper
@@ -54,7 +59,7 @@ const About = () => {
                 </div>
         {/* <img width="100%" height="100%" src={spic3}/> */}
       </div>
-      <div className={Styles.right}>
+      <div data-aos="fade-up" className={Styles.right}>
         <div className={Styles.inside}>
        <h3>WELCOME</h3>
        <h1>About Me</h1>

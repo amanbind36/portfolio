@@ -1,5 +1,5 @@
 import ImageSlider, { Slide } from "react-auto-image-slider";
-import amn from "../image/am1.png"
+import amn from "../image/amn.png"
 import amanresume from "../image/amanresume.jpg"
 import "./auto.css"
 function Auto() {

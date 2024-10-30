@@ -1,16 +1,21 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import LinearProgress from "@mui/material/LinearProgress";
 import Styles  from "./skill.module.css"
 import { ImHtmlFive } from 'react-icons/im';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import { IoLogoCss3 } from 'react-icons/io';
 import { TbBrandJavascript } from 'react-icons/tb';
 import { FaReact } from 'react-icons/fa';
 import { FaPython } from 'react-icons/fa';
 import pic4 from "../About/pic/a4.png"
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <>
-    <div><h1>Skills</h1></div>
+    <div  data-aos="fade-up"><h1>Skills</h1></div>
     <div className={Styles.line}></div>
     <div className={Styles.container}>
    <div>
