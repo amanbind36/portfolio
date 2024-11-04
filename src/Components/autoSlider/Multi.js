@@ -84,6 +84,9 @@ window.location.href="https://resume-builder-test-new.masaischool.com/resume/pub
                   </motion.h1>
        <span><h3>React-Frontend-Developer</h3></span>
        <button onClick={handlereasume} className="btn">   <a href={Aman_Resume} download="Aman_Resume.pdf"> Download Resume </a></button>
+       </div >
+       <div  className='imgcontainer'>
+        <img className='afterimg' src={spic2} />
        </div>
     </div>
     <Carousel

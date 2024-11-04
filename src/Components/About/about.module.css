@@ -77,7 +77,7 @@
 }
 
 
-@media (width<=650px){
+@media (width<=750px){
     .container{
         display: block;
         height: auto;

@@ -59,4 +59,7 @@ margin-top: 50px;
   .education>div{
     width: 100%;
   }
+  .line{
+    width: 80%;
+  }
 }

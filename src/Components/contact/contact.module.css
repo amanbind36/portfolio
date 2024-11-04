@@ -106,11 +106,11 @@ font-size: 20px;
         height: auto;
     }
     .left,.right{
-        width: 90%;
+        width: 95%;
     }
     .border{
         width: 100%;
-        margin-left: 50px;
+        /* margin-left: 50px; */
     }
     .button{
         width: 100px;
