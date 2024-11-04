@@ -57,9 +57,13 @@
   .btn {
     padding: 0 2.6rem;
   }
-  .displaynone{
-    display: none;
+  .main,.display2{
+    margin-top: 200px;
   }
+  
+  /* .displaynone{
+    display: none;
+  } */
 }
 @media (width<= 650px) {
   .aftermobile{
@@ -68,11 +72,15 @@
     width: 100%;
     height: 600px;
     margin-left: -100px;
-    display: block;
-  }
-  .main,.display2{
     display: none;
+    /* display: block; */
+    /* background-image: url("../image/ppic.png");
+    background-size: cover;
+    border: 1px solid red; */
   }
+  /* .main,.display2{
+    display: none;
+  } */
 }
 
 @media (width<= 450px) {

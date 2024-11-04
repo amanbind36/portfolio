@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import amn from "../image/amn.png"
-import spic2 from "../image/amn.png"
+import spic2 from "../image/ppic.png"
 import spic1 from "../image/am1.png"
 import amanresume from "../image/amanresume.jpg"
 import Aman_Resume from "../Resume/Aman_Resume.pdf"
@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./auto.css"
-
+import { Link } from 'react-scroll';
 
 
 const responsive = {
@@ -64,6 +64,9 @@ const Banner = () => {
     return () => clearTimeout(timer);
   });
 
+  const handlereasume=()=>{
+window.location.href="https://resume-builder-test-new.masaischool.com/resume/public?resumeId=66e20e6af930ea373f60da27"
+  }
 
   return (
     <>
@@ -80,7 +83,7 @@ const Banner = () => {
                     <span className='HomeTextAnime'>{text}</span>
                   </motion.h1>
        <span><h3>React-Frontend-Developer</h3></span>
-       <button className="btn">   <a href={Aman_Resume} download="Aman_Resume.pdf"> Download Resume </a></button>
+       <button onClick={handlereasume} className="btn">   <a href={Aman_Resume} download="Aman_Resume.pdf"> Download Resume </a></button>
        </div>
     </div>
     <Carousel
@@ -105,10 +108,10 @@ const Banner = () => {
                     <span className='HomeTextAnime'>{text}</span>
                   </motion.h1>
        <span><h3>React-Frontend-Developer</h3></span>
-       <button className="btn">   <a href={Aman_Resume} download="Aman_Resume.pdf"> Download Resume </a></button>
+       <button onClick={handlereasume} className="btn">   <a href={Aman_Resume} download="Aman_Resume.pdf"> Download Resume </a></button>
        </div>
       <div >
-      <img  className='displaynone' width={700} height={700}    src={spic2}/>
+      <img  className='displaynone' width={400} height={500}    src={spic2}/>
       </div>
        
       
@@ -118,10 +121,13 @@ const Banner = () => {
        <div className='text'>
       
        <h3>A <span className='blue' >web <br/> designer</span> from India</h3>
+       <Link to="contact" spy={true} smooth={true} duration={500}>
        <button className="btn">Hire Me</button>
+       </Link>
+      
        </div>
        <div>
-       <img width={700} height={700} src={spic2}/>
+       <img width={400} height={500} src={spic2}/>
        </div>
   
        </div>
