@@ -28,7 +28,7 @@ const About = () => {
        <h1>About Me</h1>
      
       
-       <p>Hello, I am Aman Bind from Jaunpur Uttar Pradesh. I have completed my B.tech in Electronics and Instrumentation Engineering from MJP Rohilkhand University from Bareilly Uttar Pradesh after completing my B.tech I joined Masai School where  I learned Html,Css, Javascrip and React.Js and Now I am doing Internship at Shivila Technology.</p>
+       <p>Hello, I am Aman Bind from Jaunpur, Uttar Pradesh. I completed my B.Tech in Electronics and Instrumentation Engineering from MJP Rohilkhand University in Bareilly, Uttar Pradesh. After finishing my B.Tech, I joined Shivila Technology as a frontend developer. Later, I joined Masai School, where I learned HTML, CSS, JavaScript, and React.js.</p>
 
        <h1>02. Interests and Hobbies</h1>
        <div className={Styles.hobby}>
