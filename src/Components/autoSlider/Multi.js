@@ -72,8 +72,8 @@ window.location.href="https://resume-builder-test-new.masaischool.com/resume/pub
     <>
     <div data-aos="zoom-in" className='aftermobile'>
     <div className='text'>
-       <h3 className='blue'>Hello</h3>
-       <h1>I am <span className='blue' >Aman Bind</span></h1>
+       <h3>Hello I am </h3>
+       <h1 className='blue'>Aman Bind</h1>
        <motion.h1
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -111,7 +111,7 @@ window.location.href="https://resume-builder-test-new.masaischool.com/resume/pub
        <button onClick={handlereasume} className="btn">   <a href={Aman_Resume} download="Aman_Resume.pdf"> Download Resume </a></button>
        </div>
       <div >
-      <img  className='displaynone' width={600} height={600}    src={spic2}/>
+      <img   className='imgwidth'    src={spic2}/>
       </div>
        
       
@@ -127,7 +127,7 @@ window.location.href="https://resume-builder-test-new.masaischool.com/resume/pub
       
        </div>
        <div>
-       <img width={600} height={600} src={spic2}/>
+       <img className='imgwidth'  src={spic2}/>
        </div>
   
        </div>

@@ -10,6 +10,7 @@
 .displaynone{
   position: relative;
 }
+
 .blue{
   color: blue;
 }
@@ -71,16 +72,25 @@
     text-align: center;
     width: 100%;
     height: 600px;
-    margin-left: -100px;
-    display: none;
-    /* display: block; */
+    
+    /* display: none; */
+    display: block;
     /* background-image: url("../image/ppic.png");
     background-size: cover;
     border: 1px solid red; */
   }
-  /* .main,.display2{
+  .main,.display2{
     display: none;
+  }
+  /* .aftermobile> div{
+
   } */
+
+  .imgwidth{
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+  }
 }
 
 @media (width<= 450px) {
@@ -88,4 +98,9 @@
     margin-left: -130px;
     margin-top: 100px;
   }
+}
+
+.imgwidth{
+  width: 600px;
+  height: 600px;
 }
